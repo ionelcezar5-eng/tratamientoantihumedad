@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Start-Process \"c:\\\\Users\\\\Admin\\\\Desktop\\\\pagina web\\\\index.html\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\Admin\\\\Desktop\\\\pagina web\\\\images\")",
+      "PowerShell(node --version)",
+      "PowerShell(npm --version)",
+      "PowerShell(npm install -g netlify-cli 2>&1)",
+      "PowerShell(tail -3)",
+      "PowerShell(npm install -g netlify-cli)",
+      "PowerShell(Stop-Process -Name \"node\" -Force -ErrorAction SilentlyContinue)",
+      "PowerShell(cd \"c:\\\\Users\\\\Admin\\\\Desktop\\\\pagina web\"; \\(Get-Content index.html -Raw\\) -replace 'y alrededores', 'y Alrededores' | Set-Content index.html -Encoding utf8; Write-Output \"Gata\")"
+    ]
+  }
+}
